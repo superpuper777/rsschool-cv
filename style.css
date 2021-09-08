@@ -1,0 +1,133 @@
+body {
+  font-family: 'Lexend', sans-serif;
+  color: #333333;
+}
+
+.cv__wrapper {
+  margin: 0 25rem;
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.cv__wrapper .main {
+  display: flex;
+  gap: 3rem;
+}
+
+.cv__wrapper .header__profile-image {
+  width: 150px;
+  background: #8b1c1c;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.cv__wrapper .header__profile-image-wrapper {
+  background: #fda584;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.cv__wrapper .header__profile-image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cv__wrapper .header__titles-name {
+  color: #fda584;
+}
+
+.main__information .line {
+  border-bottom: 2px solid #fbc2ae;
+  margin: 2rem 0;
+}
+
+.main__information-email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main__information-email img {
+  width: 35px;
+}
+
+.summary__title {
+  color: #fda584;
+}
+
+.summary__text {
+  line-height: 1.48;
+}
+
+.skills__title {
+  color: #fda584;
+}
+
+.skills .skills__wrapper_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: #8b1c1c;
+}
+
+.skills .skills__wrapper_item-text {
+  box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 6px 8px 0px #fbc2ae;
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.education__title {
+  color: #fda584;
+}
+
+.education__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6.5rem;
+}
+
+.education__place {
+  font-weight: 500;
+}
+
+.experience__title {
+  color: #fda584;
+}
+
+.experience__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.experience__work-places {
+  font-weight: 500;
+}
+
+.languages__title {
+  color: #fda584;
+}
+
+.languages__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6.5rem;
+}
+
+.languages__list__item-lang {
+  font-weight: 500;
+}
