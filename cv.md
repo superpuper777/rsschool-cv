@@ -1,4 +1,4 @@
-### Alena Budnik :mortar_board:
+### Alena Budnik
 
 **Location**: Minsk  
 **Phone**: +375 33 359 97 48  
