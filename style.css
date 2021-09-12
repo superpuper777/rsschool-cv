@@ -16,29 +16,34 @@ body {
   gap: 3rem;
 }
 
-.cv__wrapper .header__profile-image {
+.cv__wrapper .profile__image {
   width: 150px;
   background: #8b1c1c;
   border-radius: 50%;
   padding: 3px;
 }
 
-.cv__wrapper .header__profile-image-wrapper {
+.cv__wrapper .profile__image__wrapper {
   background: #fda584;
   border-radius: 50%;
   padding: 4px;
 }
 
-.cv__wrapper .header__profile-image img {
+.cv__wrapper .profile__image img {
   display: block;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.cv__wrapper .header__titles-name {
+.cv__wrapper .profile__titles-name {
   color: #fda584;
 }
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+} */
 
 .main__information .line {
   border-bottom: 2px solid #fbc2ae;
@@ -130,4 +135,47 @@ body {
 
 .languages__list__item-lang {
   font-weight: 500;
+}
+
+.footer {
+  padding: 0 6rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer__logo:hover {
+  width: 110px;
+  transition: 1s;
+}
+
+.footer__logo-pic {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sign__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__sign__logo {
+  width: 20px;
+  cursor: pointer;
+}
+
+.footer__sign__logo:hover {
+  width: 25px;
+  transition: 1s;
 }
