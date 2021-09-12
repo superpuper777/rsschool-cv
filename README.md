@@ -1,1 +1,1 @@
-https://superpuper777.github.io/rsschool-cv/cv
+https://superpuper777.github.io/rsschool-cv/
