@@ -24,6 +24,13 @@ body {
   gap: 3rem;
 }
 
+.main__information__links,
+.main__information__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .cv__wrapper .profile__image {
   width: 150px;
   padding: 3px;
@@ -57,7 +64,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .main__information-email img {
@@ -91,7 +98,7 @@ body {
   color: #fda584;
 }
 
-.skills .skills__wrapper_item {
+.skills .skills__list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,10 +106,12 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem;
+  padding: 0;
   color: #8b1c1c;
+  list-style-type: none;
 }
 
-.skills .skills__wrapper_item-text {
+.skills .skills__list__item {
   vertical-align: middle;
   margin: 0;
   padding: 0.4rem 1rem;
