@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./project/styles/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"
@@ -13,9 +13,49 @@
     <title>Budnik CV</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#main" class="header__item-link js-scroll">Summary</a>
+          </li>
+          <li class="header__item">
+            <a href="#skills" class="header__item-link js-scroll">Skills</a>
+          </li>
+          <li class="header__item">
+            <a href="#education" class="header__item-link js-scroll"
+              >Education</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#experience" class="header__item-link js-scroll"
+              >Experience</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#languages" class="header__item-link js-scroll"
+              >Languages</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#!" class="header__item-link js-scroll">Projects</a>
+          </li>
+        </ul>
+        <div class="header__nav-close">
+          <span class="header__nav-close_line"></span>
+          <span class="header__nav-close_line"></span>
+        </div>
+      </nav>
+      <div class="burger__wrapper">
+        <div class="header__burger burger">
+          <span class="burger__line burger__line_first"></span>
+          <span class="burger__line burger__line_second"></span>
+          <span class="burger__line burger__line_third"></span>
+        </div>
+      </div>
+    </header>
     <div class="cv__wrapper" id="content">
-      <main class="main">
+      <main class="main" id="main">
         <article class="left-article">
           <div class="info">
             <div class="profile">
@@ -23,7 +63,7 @@
                 <div class="profile__image__wrapper">
                   <img
                     class="profile__image-pic"
-                    src="./assets/img/IMG_2493.jpeg"
+                    src="./project/images/profile_photo.jpeg"
                     alt="profile image"
                   />
                 </div>
@@ -37,36 +77,46 @@
           </div>
           <section class="main__information" aria-label="section">
             <div class="line"></div>
-            <div class="main__information-email">
-              <img src="./assets/svg/icon_gmail.svg" alt="gmail_icon" />
-              <p class="main__information-email-text">
-                alyonka.budnik@gmail.com
-              </p>
-            </div>
-            <div class="main__information-email">
-              <img src="./assets/svg/icon_phone.svg" alt="phone_icon" />
-              <p class="main__information-phone">+375 33 359 97 48</p>
-            </div>
-            <div class="main__information__links">
-              <div class="main__information-link">
+            <ul class="main__information__list">
+              <li class="main__information-email">
+                <img
+                  src="./project/images/svg/icon_gmail.svg"
+                  alt="gmail_icon"
+                />
+                <p class="main__information-email-text">
+                  alyonka.budnik@gmail.com
+                </p>
+              </li>
+              <li class="main__information-email">
+                <img
+                  src="./project/images/svg/icon_phone.svg"
+                  alt="phone_icon"
+                />
+                <p class="main__information-phone">+375 33 359 97 48</p>
+              </li>
+            </ul>
+            <ul class="main__information__links">
+              <li class="main__information-link">
                 <a href="http://linkedin.com/in/alena-budnik-338812184"
                   ><img
-                    src="./assets/svg/icon_linkedin.svg"
+                    src="./project/images/svg/icon_linkedin.svg"
                     alt="linkedin_icon"
                 /></a>
-              </div>
-              <div class="main__information-link">
+              </li>
+              <li class="main__information-link">
                 <a href="https://github.com/superpuper777"
-                  ><img src="./assets/svg/icon_github.svg" alt="github_icon"
+                  ><img
+                    src="./project/images/svg/icon_github.svg"
+                    alt="github_icon"
                 /></a>
-              </div>
-            </div>
-
+              </li>
+              <!-- </div> -->
+            </ul>
             <div class="line"></div>
           </section>
         </article>
         <article class="right-article" aria-label="article">
-          <section class="summary">
+          <section class="summary" id="summary">
             <h3 class="summary__title">SUMMARY</h3>
             <p class="summary__text">
               Novice front-end developer with 2 years of experience in
@@ -77,24 +127,24 @@
               technologies and constantly improve my knowledge.
             </p>
           </section>
-          <section class="skills">
+          <section class="skills" id="skills">
             <h3 class="skills__title">SKILLS</h3>
             <div class="skills__wrapper">
-              <div class="skills__wrapper_item">
-                <p class="skills__wrapper_item-text">JS</p>
-                <p class="skills__wrapper_item-text">HTML/CSS</p>
-                <p class="skills__wrapper_item-text">SCSS</p>
-                <p class="skills__wrapper_item-text">React</p>
-                <p class="skills__wrapper_item-text">React-Redux</p>
-                <p class="skills__wrapper_item-text">Redux-toolkit</p>
-                <p class="skills__wrapper_item-text">Angular</p>
-                <p class="skills__wrapper_item-text">GIT</p>
-                <p class="skills__wrapper_item-text">Figma</p>
-                <p class="skills__wrapper_item-text">Material UI</p>
-              </div>
+              <ul class="skills__list">
+                <li class="skills__list__item">JS</li>
+                <li class="skills__list__item">HTML/CSS</li>
+                <li class="skills__list__item">SCSS</li>
+                <li class="skills__list__item">React</li>
+                <li class="skills__list__item">React-Redux</li>
+                <li class="skills__list__item">Redux-toolkit</li>
+                <li class="skills__list__item">Angular</li>
+                <li class="skills__list__item">GIT</li>
+                <li class="skills__list__item">Figma</li>
+                <li class="skills__list__item">Material UI</li>
+              </ul>
             </div>
           </section>
-          <section class="education">
+          <section class="education" id="education">
             <h3 class="education__title">EDUCATION</h3>
             <div class="education__list">
               <div class="education__list__item">
@@ -113,7 +163,7 @@
               </div>
             </div>
           </section>
-          <section class="experience">
+          <section class="experience" id="experience">
             <h3 class="experience__title">EXPERIENCE</h3>
             <div class="experience__list">
               <div class="experience__list__item">
@@ -133,7 +183,7 @@
               </div>
             </div>
           </section>
-          <section class="languages">
+          <section class="languages" id="languages">
             <h3 class="languages__title">LANGUAGES</h3>
             <div class="languages__list">
               <div class="languages__list__item">
@@ -155,7 +205,7 @@
           <div class="footer__logo">
             <a href="../html-link.htm"
               ><img
-                src="./assets/svg/logo/rs_school_js.svg"
+                src="./project/images/logo/rs_school_js.svg"
                 alt="Awersome RS School"
                 class="footer__logo-pic"
             /></a>
@@ -165,7 +215,7 @@
           <div class="footer__sign__logo">
             <a href="https://github.com/superpuper777/rsschool-cv"
               ><img
-                src="./assets/svg/logo/icon_github.svg"
+                src="./project/images/logo/icon_github.svg"
                 alt="Github logo"
                 class="footer__logo-pic"
             /></a>
@@ -176,5 +226,6 @@
         </div>
       </div>
     </footer>
+    <script src="./project/scripts/script.js"></script>
   </body>
 </html>
